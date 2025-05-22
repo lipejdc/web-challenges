@@ -1,0 +1,58 @@
+/* Please scroll down to the start of your exercise! */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+section {
+  background-color: lemonchiffon;
+  display: grid;
+  place-items: center;
+}
+
+.skyblue {
+  background-color: skyblue;
+}
+
+button {
+  background-color: white;
+  padding: 8px 25px;
+}
+
+/* Your exercise starts here. */
+
+/* Add your CSS styles below this line. Feel free to replace the comments with your code. 
+Make sure not to put your code into the comments, because then nothing will happen. */
+
+.button1 {
+  /* Style me! Change my border, set a border radius or try out other styles. :) */
+  border: 3px solid black;
+  border-radius: 5px;
+  color: blue;
+}
+
+.button2 {
+  /* Style me! Change my color or background-color, or both! You can experiment with different color formats here, like HEX, RGB, etc. */
+  background-color: #e9da13;
+  color: #634848;
+}
+
+.button3 {
+  /* Style me! You can test out changing the font, font size, ...*/
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+.button4 {
+  /* Style me! Can you add a shadow to this button? Try playing around with shadow properties - you can even change the shadow color, size, and more. */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2),
+            0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Feel free to play around with other properties, too. */
