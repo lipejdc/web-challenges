@@ -1,0 +1,18 @@
+.order {
+  padding: 0.75em 1.5em;
+  width: fit-content;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: #fff8f2;
+  color: #3f0097;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.order:hover {
+  background-color: #e5533d;
+  transform: translateY(-2px);
+}
