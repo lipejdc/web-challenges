@@ -10,7 +10,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const postTitle = "Sunset in Mülheim";
+const postContent = "I watched a beautiful sunset over the Rhein in Köln Mülheim!";
+let likes = 89;
+const user = "koeln_viewz";
+let isReported = false;
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +22,13 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+console.log("Post Title:", postTitle);
+console.log("Post Content:", postContent);
+console.log("Likes:", likes);
+console.log("User:", user);
+console.log("Is Reported:", isReported);
+
+likes++;
+console.log(`Updated Likes: ${likes}`);
 
 // --^-- write your code here --^--
