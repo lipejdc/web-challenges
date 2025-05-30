@@ -1,6 +1,6 @@
 // You don't have to touch this code.
 // You can solve this exercise in the browser
-
+//
 
 function showAnswers() {
     const spans = document.querySelectorAll("span");
