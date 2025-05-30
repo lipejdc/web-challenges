@@ -1,3 +1,4 @@
+
 // Change this value to test different "weather" conditions.
 const weather = "snowy";
 
