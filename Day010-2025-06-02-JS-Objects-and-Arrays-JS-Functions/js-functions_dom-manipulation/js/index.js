@@ -11,14 +11,10 @@ We want to add functionality to the buttons on this page. When a button is click
   3. Use the two functions in the event listeners for the buttons to apply the corresponding color to the box when a button is clicked.
 */
 
-// const cssColorClasses = ["red", "green", "blue", "gray"];
+const cssColorClasses = ["red", "green", "blue", "gray"];
 
-// const removeAllColors = (htmlElement, colorClassesToRemove) => {
-//   colorClassesToRemove.forEach((color) => htmlElement.classList.remove(color));
-// };
-
-const removeAllColors = (htmlElement, colorClassToRemove) => {
- htmlElement.classList.remove(colorClassToRemove);
+const removeAllColors = (htmlElement, colorClassesToRemove) => {
+  colorClassesToRemove.forEach((color) => htmlElement.classList.remove(color));
 };
 
 const addColorClass = (htmlElement, colorClassToAdd) => {
