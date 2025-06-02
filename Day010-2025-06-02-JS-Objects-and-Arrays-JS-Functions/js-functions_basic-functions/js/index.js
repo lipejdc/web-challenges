@@ -9,7 +9,32 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+const createBookData = (title, author, rating, copiesSold) => {
+  
+  const book = { title, author, rating, copiesSold };
 
+  logBookData(book);
+
+  book.copiesSold *= 5;
+  book.rating += 0.2;
+
+  logBookData(book);
+
+  book.copiesSold *= 2;
+  logBookData(book);
+
+  book.copiesSold *= 3;
+  logBookData(book);
+};
+
+const logBookData = (book) => {
+  console.log(`Title: ${book.title}`);
+  console.log(`Author: ${book.author}`);
+  console.log(`Rating: ${book.rating}`);
+  console.log(`Sales: ${book.copiesSold}`);
+};
+
+createBookData("The Lord of the Javascript", "Definitely Not Me", 4.2, 120);
 // --^-- write your code here --^--
 
 /*
