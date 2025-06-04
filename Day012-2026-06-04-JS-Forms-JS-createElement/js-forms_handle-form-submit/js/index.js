@@ -26,4 +26,5 @@ form.addEventListener("submit", (event) => {
 
 
   event.target.reset();
+  event.target.elements.firstName.focus();
 });
