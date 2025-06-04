@@ -11,7 +11,7 @@ likeButton.addEventListener("click", handleLikeButtonClick);
 // Exercise:
 // Use document.createElement() and append another social media post to the body.
 const createNewSocialMediaPost = () => {
-  
+
   const articleElement = document.createElement("article");
   articleElement.classList.add("post");
 
@@ -29,6 +29,8 @@ const createNewSocialMediaPost = () => {
 
   const buttonElement = document.createElement("button");
   buttonElement.classList.add("post__button");
+  buttonElement.setAttribute("data-js", "like-button");
+  buttonElement.type = "button";
   buttonElement.textContent = "♥ Like";
 
   footerElement.append(spanElement, buttonElement);
