@@ -12,30 +12,31 @@ likeButton.addEventListener("click", handleLikeButtonClick);
 // Use document.createElement() and append another social media post to the body.
 const createNewSocialMediaPost = () => {
 
-  const articleElement = document.createElement("article");
-  articleElement.classList.add("post");
+  const newArticleElement = document.createElement("article");
+  newArticleElement.classList.add("post");
 
-  const paragraphElement = document.createElement("p");
-  paragraphElement.classList.add("post__content");
-  paragraphElement.textContent =
+  const newParagraphElement = document.createElement("p");
+  newParagraphElement.classList.add("post__content");
+  newParagraphElement.textContent =
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit.";
 
-  const footerElement = document.createElement("footer");
-  footerElement.classList.add("post__footer");
+  const newFooterElement = document.createElement("footer");
+  newFooterElement.classList.add("post__footer");
 
-  const spanElement = document.createElement("span");
-  spanElement.classList.add("post__username");
-  spanElement.textContent = "@username";
+  const newSpanElement = document.createElement("span");
+  newSpanElement.classList.add("post__username");
+  newSpanElement.textContent = "@username";
 
-  const buttonElement = document.createElement("button");
-  buttonElement.classList.add("post__button");
-  buttonElement.setAttribute("data-js", "like-button");
-  buttonElement.type = "button";
-  buttonElement.textContent = "♥ Like";
+  const newButtonElement = document.createElement("button");
+  newButtonElement.classList.add("post__button");
+  newButtonElement.setAttribute("data-js", "like-button");
+  newButtonElement.type = "button";
+  newButtonElement.textContent = "♥ Like";
+  newButtonElement.addEventListener("click", handleLikeButtonClick);
 
-  footerElement.append(spanElement, buttonElement);
-  articleElement.append(paragraphElement, footerElement);
-  document.body.append(articleElement);
+  newFooterElement.append(newSpanElement, newButtonElement);
+  newArticleElement.append(newParagraphElement, newFooterElement);
+  document.body.append(newArticleElement);
 };
 
 createNewSocialMediaPost();
