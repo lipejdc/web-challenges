@@ -25,6 +25,7 @@ main.append(select);
 for (const language in languages) {
   console.log(languages[language]);
   const optionElement = document.createElement('option');
+  optionElement.setAttribute("value", languages[language]);
   optionElement.textContent = language;
   select.append(optionElement);
 }
