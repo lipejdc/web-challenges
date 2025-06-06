@@ -17,4 +17,11 @@ const programmingLanguages = [
 
 // --v-- write or modify code below this line --v--
 
+for (const language of programmingLanguages) {
+  const listElement = document.createElement("li");
+  listElement.textContent = language;
+  ol.appendChild(listElement);
+  console.log(listElement);
+}
+
 // --^-- write or modify code above this line --^--
