@@ -1,4 +1,4 @@
-# JS Array Methods: `map`
+n# JS Array Methods: `map`
 
 This challenge offers a some exercises to recap the array method `map`. Let's dive directly into it!
 
