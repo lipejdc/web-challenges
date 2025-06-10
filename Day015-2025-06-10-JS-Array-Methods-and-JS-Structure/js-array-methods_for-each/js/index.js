@@ -19,7 +19,6 @@ const colors = [
   "#A5A5A5",
 ];
 
-//WHY DIDN'T THE PUSH WORK?
 const renderColorBox = () => {
   const colorBox = document.createElement('div');
   colorBox.classList.add('color-box');
