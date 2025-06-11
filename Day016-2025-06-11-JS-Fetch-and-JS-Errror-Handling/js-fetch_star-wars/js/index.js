@@ -34,13 +34,24 @@ const EXAMPLE_DATA = {
 };
 
 // Create dom element for a card and append it to the root
+const starWarsApi = "https://swapi.py4e.com/api/people";
 const firstCard = Card(EXAMPLE_DATA);
 renderElement(firstCard);
 
-fetchDataAndRender();
+fetchDataAndRender(starWarsApi);
 
 // --v-- your code below this line --v--
 
-function fetchDataAndRender() {
-  fetch(); // ?
+async function fetchDataAndRender(apiUrl) {
+  const response = await fetch(apiUrl);
+  const data = await response.json();
+  console.log(data);
+
+  const lukeSkywalkerData = data.results[0];
+  console.log(lukeSkywalkerData);
+
+  data.results.forEach(character => {
+      const characterCard = Card(character);
+      renderElement(characterCard);
+    });
 }
