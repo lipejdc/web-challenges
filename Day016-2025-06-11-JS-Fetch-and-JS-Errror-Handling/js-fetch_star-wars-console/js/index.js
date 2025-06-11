@@ -13,6 +13,7 @@ async function fetchData(url) {
     console.log(person.gender);
   } 
 
+  console.log(data.results[2].name);
   console.log(data.results[2].eye_color);
 }
 
