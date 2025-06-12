@@ -8,9 +8,9 @@ const operations = {
   subtract: (a, b) => a - b,
   multiply: (a, b) => a * b,
   divide: (a, b) => {
-    if (b === 0) {
-      throw new Error("Cannot divide by zero!");
-    }
+      if (b === 0) {
+        throw new Error("Cannot divide by zero!");
+    } 
     return a / b;
   },
 };
@@ -20,5 +20,13 @@ form.addEventListener("submit", (event) => {
   const firstNumber = Number(event.target.firstNumber.value);
   const secondNumber = Number(event.target.secondNumber.value);
   const operation = event.target.operation.value;
-  output.innerText = operations[operation](firstNumber, secondNumber);
+  try {
+    output.innerText = operations[operation](firstNumber, secondNumber);
+    document.querySelector(".error").innerText = "";
+  } catch (error) {
+    console.log(error);
+    console.error(error);
+    output.innerText = "❌";
+    document.querySelector(".error").innerText = error.message;
+  }
 });
