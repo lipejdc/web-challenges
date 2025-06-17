@@ -1,3 +1,12 @@
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return (
+    <>
+      <Greeting name="Felipe" />
+      <Greeting name="Roland" />
+    </>
+  );
+}
+
+function Greeting({ name }) {
+  return <span>Hello, {name === "Roland" ? "Coach" : name}!</span>;
 }
