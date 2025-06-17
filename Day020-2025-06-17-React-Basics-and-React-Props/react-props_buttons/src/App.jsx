@@ -1,5 +1,5 @@
 export default function App() {
-  // 4. Moved the event handler to App component
+
   function handleClick(message) {
     alert(message);
   }
@@ -16,7 +16,6 @@ export default function App() {
       <Button
         text="Blue button"
         color="blue"
-        disabled={false}
         backgroundColor="yellow"
         onClick={() => handleClick("You clicked the blue text button!!")}
       />
@@ -30,7 +29,6 @@ export default function App() {
       <Button
         text="Green button"
         color="green"
-        disabled={false}
         backgroundColor="black"
         onClick={() => handleClick("You clicked the green text button!!")}
       />
@@ -39,6 +37,8 @@ export default function App() {
 }
 
 function Button({ text, color, disabled, backgroundColor, onClick }) {
+  
+  
   return (
     <button
       onClick={onClick}
@@ -47,6 +47,8 @@ function Button({ text, color, disabled, backgroundColor, onClick }) {
         color: color,
         backgroundColor: backgroundColor,
         height: "6rem",
+        borderRadius: "5px",
+        fontFamily: "Roboto",
         fontSize: "1.25rem",
         border: "1px solid black",
         padding: "0.75rem 1.5rem",
