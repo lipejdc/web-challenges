@@ -8,7 +8,6 @@ import Avatar from "./components/Avatar";
 export default function App() {
   return (
     <>
-      <main>content goes here…</main>
       <Header>
         <Link href="#">
           <Logo />
@@ -20,6 +19,7 @@ export default function App() {
         </Navigation>
         <Avatar/>
       </Header>
+      <main>content goes here…</main>
     </>
   );
 }
