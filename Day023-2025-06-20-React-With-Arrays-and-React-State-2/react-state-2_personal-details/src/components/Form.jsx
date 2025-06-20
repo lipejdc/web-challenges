@@ -1,11 +1,13 @@
-import { useState } from "react";
-
-export default function Form() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+export default function Form( { onCreateUser } ) {
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    const { name, email } = event.target;
+
+    onCreateUser(name.value, email.value);
+
+    event.target.reset();
   }
 
   return (
