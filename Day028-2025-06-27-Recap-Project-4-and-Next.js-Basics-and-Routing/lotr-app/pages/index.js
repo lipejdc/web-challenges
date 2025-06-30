@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { introduction } from "../lib/data";
+import { introduction } from "../resources/lib/data"
 
 export default function HomePage() {
+  
   return (
     <main>
       <h1>Lord of the Rings</h1>
